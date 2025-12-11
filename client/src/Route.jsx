@@ -3,7 +3,12 @@ import MainLayout from "./pages/MainLayout";
 import LoginPage from "./pages/LoginPage";
 import Dashboard from "./pages/Dashboard";
 import MyAccountsPage from "./pages/AccountsPage";
-import ExchangePage from "./components/ExchangePage";
+import ExchangePage from "./pages/ExchangePage";
+import TransactionPage from "./pages/TransactionPage";
+import LoansPage from "./pages/LoanPage";
+import ReportPage from "./pages/ReportPage";
+import QuotationPage from "./pages/QuotationPage";
+import UsersPage from "./pages/UsersPage";
 
 export const router = createBrowserRouter([
   {
@@ -19,8 +24,12 @@ export const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
+        path: "users",
+        element: <UsersPage />,
+      },
+      {
         path: "transactions",
-        element: <h2>Transaction Page.</h2>,
+        element: <TransactionPage />,
       },
       {
         path: "accounts",
@@ -29,6 +38,18 @@ export const router = createBrowserRouter([
       {
         path: "exchange",
         element: <ExchangePage />,
+      },
+      {
+        path: "quotations",
+        element: <QuotationPage />,
+      },
+      {
+        path: "loans",
+        element: <LoansPage />,
+      },
+      {
+        path: "reports",
+        element: <ReportPage />,
       },
     ],
   },

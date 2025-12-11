@@ -8,19 +8,24 @@ import {
   LogOut,
   X,
   ChartNoAxesCombined,
+  User,
+  FileSignature,
+  FileText,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const menuItems = [
   { icon: LayoutDashboard, label: "Dashboard", href: "/dashboard" },
+  { icon: User, label: "Users", href: "/dashboard/users" },
   { icon: Wallet, label: "My Accounts", href: "/dashboard/accounts" },
   {
     icon: ArrowRightLeft,
-    label: "Sarif (Exchange)",
+    label: "Sarif(Exchange)",
     href: "/dashboard/exchange",
   },
   { icon: History, label: "Transactions", href: "/dashboard/transactions" },
+  { icon: FileText, label: "Quotations", href: "/dashboard/quotations" },
   { icon: Landmark, label: "Loans", href: "/dashboard/loans" },
   { icon: ChartNoAxesCombined, label: "Reports", href: "/dashboard/reports" },
 ];
